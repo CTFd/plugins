@@ -1,0 +1,9 @@
+[submodule "CTFd-S3-plugin"]
+	path = CTFd-S3-plugin
+	url = git@github.com:CTFd/CTFd-S3-plugin.git
+[submodule "CTFd-Notify"]
+	path = CTFd-Notify
+	url = git@github.com:CTFd/CTFd-Notify.git
+[submodule "CTFd-Docker"]
+	path = CTFd-Docker
+	url = https://github.com/CTFd/CTFd-Docker
