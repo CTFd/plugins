@@ -1,0 +1,3 @@
+[submodule "CTFd-multi-answer"]
+	path = CTFd-multi-answer
+	url = https://github.com/wroersma/CTFd-multi-answer
