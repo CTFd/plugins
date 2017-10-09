@@ -1,3 +1,6 @@
+[submodule "CTFd-multi-answer"]
+	path = CTFd-multi-answer
+	url = https://github.com/wroersma/CTFd-multi-answer
 [submodule "CTFd-S3-plugin"]
 	path = CTFd-S3-plugin
 	url = git@github.com:CTFd/CTFd-S3-plugin.git
