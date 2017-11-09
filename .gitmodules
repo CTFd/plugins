@@ -10,3 +10,6 @@
 [submodule "CTFd-Docker"]
 	path = CTFd-Docker
 	url = https://github.com/CTFd/CTFd-Docker
+[submodule "DynamicValueChallenge"]
+	path = DynamicValueChallenge
+	url = https://github.com/CTFd/DynamicValueChallenge.git
