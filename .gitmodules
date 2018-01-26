@@ -19,3 +19,6 @@
 [submodule "recaptcha-plugin"]
 	path = recaptcha-plugin
 	url = https://github.com/tamuctf/ctfd-recaptcha-plugin.git
+[submodule "ctfd-matrix-scoreboard-plugin"]
+	path = ctfd-matrix-scoreboard-plugin
+	url = https://github.com/itsZN/ctfd-matrix-scoreboard-plugin.git
