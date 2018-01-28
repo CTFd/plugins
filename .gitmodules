@@ -22,3 +22,6 @@
 [submodule "ctfd-matrix-scoreboard-plugin"]
 	path = ctfd-matrix-scoreboard-plugin
 	url = https://github.com/itsZN/ctfd-matrix-scoreboard-plugin.git
+[submodule "CTFd_hash_crack_king"]
+	path = CTFd_hash_crack_king
+	url = https://github.com/jtylers/CTFd_hash_crack_king.git
