@@ -25,3 +25,6 @@
 [submodule "CTFd_hash_crack_king"]
 	path = CTFd_hash_crack_king
 	url = https://github.com/jtylers/CTFd_hash_crack_king.git
+[submodule "CTFd-multi-question-plugin"]
+	path = CTFd-multi-question-plugin
+	url = https://github.com/tamuctf/CTFd-multi-question-plugin.git
