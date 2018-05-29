@@ -28,3 +28,6 @@
 [submodule "CTFd-multi-question-plugin"]
 	path = CTFd-multi-question-plugin
 	url = https://github.com/tamuctf/CTFd-multi-question-plugin.git
+[submodule "ctfd-challenge-dependencies"]
+	path = ctfd-challenge-dependencies
+	url = https://github.com/narhen/ctfd-challenge-dependencies.git
