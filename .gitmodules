@@ -34,3 +34,7 @@
 [submodule "CTFdOnlineChallenge"]
 	path = CTFdOnlineChallenge
 	url = https://github.com/XuCcc/CTFdOnlineChallenge.git
+[submodule "ctfd-timed-releases-plugin"]
+	path = ctfd-timed-releases-plugin
+	url = https://github.com/alokmenghrajani/ctfd-timed-releases-plugin
+	branch = master
