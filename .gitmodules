@@ -14,7 +14,7 @@
 	path = DynamicValueChallenge
 	url = https://github.com/CTFd/DynamicValueChallenge.git
 [submodule "portable-challenges-plugin"]
-	path = portable-challenges-plugin
+	path = ctfd-portable-challenges-plugin
 	url = https://github.com/tamuctf/ctfd-portable-challenges-plugin.git
 [submodule "recaptcha-plugin"]
 	path = recaptcha-plugin
