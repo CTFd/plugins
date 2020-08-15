@@ -44,3 +44,6 @@
 [submodule "CTFd-dropbox-plugin"]
 	path = CTFd-dropbox-plugin
 	url = https://github.com/erseco/CTFd-dropbox-plugin.git
+[submodule "CTFd_Team_Attributes"]
+	path = CTFd_Team_Attributes
+	url = https://github.com/durkinza/CTFd_Team_Attributes
