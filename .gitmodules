@@ -44,3 +44,6 @@
 [submodule "CTFd-dropbox-plugin"]
 	path = CTFd-dropbox-plugin
 	url = https://github.com/erseco/CTFd-dropbox-plugin.git
+[submodule "CTFd_chat_notifier"]
+	path = CTFd_chat_notifier
+	url = https://github.com/krzys-h/CTFd_chat_notifier.git
