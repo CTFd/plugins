@@ -44,3 +44,6 @@
 [submodule "CTFd-dropbox-plugin"]
 	path = CTFd-dropbox-plugin
 	url = https://github.com/erseco/CTFd-dropbox-plugin.git
+[submodule "CTFd_CTFTime_endpoint"]
+	path = CTFd_CTFTime_endpoint
+	url = https://github.com/durkinza/CTFd_CTFTime_endpoint
