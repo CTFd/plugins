@@ -44,3 +44,6 @@
 [submodule "CTFd-dropbox-plugin"]
 	path = CTFd-dropbox-plugin
 	url = https://github.com/erseco/CTFd-dropbox-plugin.git
+[submodule "CTFd-personal_challenge-plugin"]
+	path = ctfd-personal_challenge-plugin	
+	url = https://github.com/danyk20/ctfd-personal_challenge-plugin
