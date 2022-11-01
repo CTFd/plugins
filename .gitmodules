@@ -47,3 +47,6 @@
 [submodule "ctfd-personal_challenge-plugin"]
 	path = ctfd-personal_challenge-plugin
 	url = https://github.com/danyk20/ctfd-personal_challenge-plugin.git
+[submodule "CTFd_Multi_Questions"]
+	path = CTFd_Multi_Questions
+	url = git@github.com:adamlahbib/CTFd_Multi_Questions.git
