@@ -1,0 +1,4 @@
+{
+    "name": "Bulk-change visibility on challenges",
+    "route": "/admin/challenges/categories"
+}
