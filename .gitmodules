@@ -50,3 +50,6 @@
 [submodule "CTFd_Multi_Questions"]
 	path = CTFd_Multi_Questions
 	url = git@github.com:adamlahbib/CTFd_Multi_Questions.git
+[submodule "CTFd-gdrive-plugin"]
+	path = CTFd-gdrive-plugin
+	url = https://github.com/TheArqsz/CTFd-gdrive-plugin
