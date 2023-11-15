@@ -53,3 +53,6 @@
 [submodule "CTFd-gdrive-plugin"]
 	path = CTFd-gdrive-plugin
 	url = https://github.com/TheArqsz/CTFd-gdrive-plugin
+[submodule "ctfd-solve-webhook-plugin"]
+	path = ctfd-solve-webhook-plugin
+	url = https://github.com/iosifache/ctfd-solve-webhook-plugin
