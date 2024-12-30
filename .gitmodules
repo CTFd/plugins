@@ -44,6 +44,9 @@
 [submodule "CTFd-dropbox-plugin"]
 	path = CTFd-dropbox-plugin
 	url = https://github.com/erseco/CTFd-dropbox-plugin.git
+[submodule "CTFd_Split_Scoreboard"]
+	path = CTFd_Split_Scoreboard
+	url = https://github.com/durkinza/CTFd_Split_Scoreboard.git
 [submodule "ctfd-personal_challenge-plugin"]
 	path = ctfd-personal_challenge-plugin
 	url = https://github.com/danyk20/ctfd-personal_challenge-plugin.git
@@ -59,3 +62,4 @@
 [submodule "ctfd-chall-manager"]
 	path = ctfd-chall-manager
 	url = https://github.com/ctfer-io/ctfd-chall-manager
+
