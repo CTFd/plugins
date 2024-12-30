@@ -47,3 +47,19 @@
 [submodule "CTFd_Split_Scoreboard"]
 	path = CTFd_Split_Scoreboard
 	url = https://github.com/durkinza/CTFd_Split_Scoreboard.git
+[submodule "ctfd-personal_challenge-plugin"]
+	path = ctfd-personal_challenge-plugin
+	url = https://github.com/danyk20/ctfd-personal_challenge-plugin.git
+[submodule "CTFd_Multi_Questions"]
+	path = CTFd_Multi_Questions
+	url = git@github.com:adamlahbib/CTFd_Multi_Questions.git
+[submodule "CTFd-gdrive-plugin"]
+	path = CTFd-gdrive-plugin
+	url = https://github.com/TheArqsz/CTFd-gdrive-plugin
+[submodule "ctfd-solve-webhook-plugin"]
+	path = ctfd-solve-webhook-plugin
+	url = https://github.com/iosifache/ctfd-solve-webhook-plugin
+[submodule "ctfd-chall-manager"]
+	path = ctfd-chall-manager
+	url = https://github.com/ctfer-io/ctfd-chall-manager
+
