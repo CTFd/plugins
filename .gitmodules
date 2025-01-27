@@ -71,3 +71,6 @@
 [submodule "ctfd-chall-manager"]
 	path = ctfd-chall-manager
 	url = https://github.com/ctfer-io/ctfd-chall-manager
+[submodule "ctfd-modules"]
+	path = ctfd-modules
+	url = https://github.com/caprinux/ctfd-modules/
