@@ -71,3 +71,6 @@
 [submodule "ctfd-chall-manager"]
 	path = ctfd-chall-manager
 	url = https://github.com/ctfer-io/ctfd-chall-manager
+[submodule "CTFd-Sub-Question"]
+	path = CTFd-Sub-Question
+	url = git@github.com:tyc4d/CTFd-Sub-Question.git
