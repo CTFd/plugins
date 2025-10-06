@@ -1,0 +1,4 @@
+{
+  "name": "Github backup",
+  "route": "/admin/plugins/github_backup"
+}
