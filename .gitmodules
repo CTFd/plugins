@@ -74,3 +74,6 @@
 [submodule "ctfd-modules"]
 	path = ctfd-modules
 	url = https://github.com/caprinux/ctfd-modules/
+[submodule "CTFd-Sub-Question"]
+	path = CTFd-Sub-Question
+	url = git@github.com:tyc4d/CTFd-Sub-Question.git
