@@ -74,3 +74,6 @@
 [submodule "CTFd-Sub-Question"]
 	path = CTFd-Sub-Question
 	url = git@github.com:tyc4d/CTFd-Sub-Question.git
+[submodule "CTFd_github_backup"]
+path = CTFd_github_backup
+url = https://github.com/avilrod3004/CTFd_github_backup
