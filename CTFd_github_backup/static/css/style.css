@@ -1,0 +1,92 @@
+.header {
+    grid-area: header;
+    text-align: center;
+    padding: 60px 10px;
+}
+
+/* COMMON CLASSES */
+.import__header, .export__header {
+    border-bottom: 2px solid #da8b00;
+    margin-bottom: 32px;
+    font-weight: bolder;
+}
+
+.subsection-title {
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+
+.a-button {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.multiple-import, .multiple-export {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 8px;
+}
+
+/* IMPORT SECTION */
+.import {
+    padding-bottom: 48px;
+}
+
+.import__body {
+    display: grid;
+    grid-template-columns: 30% 65%;
+    grid-template-areas:
+            "aside main";
+    gap: 48px;
+}
+
+.body-import__aside {
+    grid-area: aside;
+}
+
+.body-import__main {
+    grid-area: main;
+    padding-top: 0;
+}
+
+.aside-import__error {
+    margin: 16px 0;
+    display: none;
+}
+
+.aside-import__repositories {
+    display: none;
+}
+
+.repositories__button {
+    width: 100%;
+}
+
+.aside-import__info {
+    border: 4px solid #da8b00;
+    margin-top: 32px;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.aside-import__info .info__title {
+    color: #da8b00;
+    border-bottom: 1px solid #da8b00;
+}
+
+.info__button {
+    width: 100%;
+}
+
+.main-import__settings {
+    margin-bottom: 24px;
+}
+
+/* EXPORT SECTION */
+
