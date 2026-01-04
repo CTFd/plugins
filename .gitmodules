@@ -78,5 +78,8 @@
 	path = CTFd-Sub-Question
 	url = git@github.com:tyc4d/CTFd-Sub-Question.git
 [submodule "CTFd_github_backup"]
-path = CTFd_github_backup
-url = https://github.com/avilrod3004/CTFd_github_backup
+	path = CTFd_github_backup
+	url = https://github.com/avilrod3004/CTFd_github_backup
+[submodule "ctfd-bitcoin-rewards-challenge"]
+	path = ctfd-bitcoin-rewards-challenge
+	url = git@github.com:aljazceru/ctfd-bitcoin-rewards-challenge.git
