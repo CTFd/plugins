@@ -1,0 +1,194 @@
+{# plugins/github_backup/templates/admin/github_backup.html #}
+{% extends "admin/base.html" %}
+{% block content %}
+<div class="container">
+    <header class="header">
+        <h1>Github backup</h1>
+        <p>Import challenges from Github and export to JSON</p>
+    </header>
+
+    {#  Import section  #}
+    <section class="import">
+        <header class="import__header">
+            <h2 class="header__text">Import challenges from Github</h2>
+        </header>
+
+        <section class="import__body">
+            <div class="body-import__aside">
+                {#  Auth section  #}
+                <div id="github-login-section" class="aside-import__auth">
+                    <h5 class="subsection-title">
+                        <i class="fab fa-github me-1"></i> Connect your GitHub account to import challenges from your public or private repositories.
+                    </h5>
+
+                    <p>Configure a GitHub App by following the steps in the plugin's <code>README.md</code> file. Then follow the buttons below to install the GitHub App on your GitHub account and link the installation.</p>
+
+                    <a href="{{ installation_url }}" id="github-login-button" class="btn btn-warning a-button">
+                        <i class="fas fa-plug me-1"></i> 1. Install GitHub App
+                    </a>
+
+                    <a id="button-link-instalation" class="btn btn-warning a-button">
+                        <i class="fas fa-link me-1"></i> 2. Link installation
+                    </a>
+                </div>
+
+                {#  Error section  #}
+                <div class="form-group aside-import__error" id="github-error-section">
+                    <div class="alert alert-danger" role="alert" id="github-error-message">
+                        <i class="fas fa-exclamation-triangle me-1"></i>
+                        <p>{{ message_result }}</p>
+                    </div>
+                </div>
+
+                <!-- Repositories section -->
+                <div class="aside-import__repositories" id="github-repos-section">
+                    <h5 class="subsection-title">
+                        <i class="fab fa-github me-1"></i> Github repositories
+                    </h5>
+
+                    <input aria-label="Github repositories" type="text" id="github-repo-search" class="form-control" placeholder="Search repository...">
+
+                    <div id="github-repos-list" class="mt-3">
+                        <!-- Repositories will be dynamically inserted here -->
+                    </div>
+
+                    <nav aria-label="Repos pagination" class="mt-3">
+                        <ul class="pagination" id="github-repo-pagination"></ul>
+                    </nav>
+
+                    <button id="save-selected-repos" class="btn btn-warning repositories__button">
+                        <i class="fas fa-save me-1"></i> Save selected repositories
+                    </button>
+                </div>
+
+                <div class="aside-import__info">
+                    <h5 class="subsection-title info__title">
+                        <i class="fab fa-exclamation me-1"></i> <i class="fab fa-exclamation me-1"></i> Important
+                    </h5>
+
+                    <p>The repositories must have a folder named <code>challenges</code> that contains JSON files with the following format:</p>
+
+                    <button id="example-button" class="btn btn-info info__button">
+                         <i class="fas fa-file-download me-1"></i> Download an example
+                    </button>
+                </div>
+            </div>
+
+            {#  main  #}
+            <div class="body-import__main">
+                <div class="main-import__settings">
+                    <h5 class="subsection-title"><i class="fas fa-cog me-1"></i> Import/update settings</h5>
+                    <form action="">
+                        <fieldset>
+                            <label>What do you want to do with imported challenges that no longer exist in the repositories?</label>
+                            <br>
+                            <input type="radio" id="option-sync_only" name="delete-mode" value="sync_only" checked>
+                            <label for="option-sync_only">Keep it, it will no longer be marked as imported from GitHub</label>
+                            <br>
+                            <input type="radio" id="option-full" name="delete-mode" value="full">
+                            <label for="option-full">Delete it</label>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="main-import__repositories">
+                    <div class="subsection-title">
+                        <h5 class="subsection-title"><i class="fas fa-database me-1"></i> Saved Repositories</h5>
+                    </div>
+
+                    <p>You can import challenges for each repository individually or select multiple repositories from the table and import them together by clicking the “Import selected repositories” button.</p>
+
+                    <div class="multiple-import">
+                        <button id="import-selected-repos" class="btn btn-success">
+                            <i class="fas fa-download me-1"></i> Import selected repositories
+                        </button>
+                    </div>
+
+                    <table class="table table-bordered" id="github-saved-repos-table">
+                        <thead>
+                            <tr>
+                                <th><i class="fas fa-check-square me-1"></i></th>
+                                <th><i class="fas fa-folder-open me-1"></i> Name</th>
+                                <th><i class="fas fa-clock me-1"></i> Last import time</th>
+                                <th><i class="fas fa-cogs me-1"></i> Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="4" class="text-center">
+                                  <i class="fas fa-spinner fa-spin text-warning"></i>
+                                  <div class="small text-muted">Loading saved repositories...</div>
+                                </td>
+                              </tr>
+                        </tbody>
+                    </table>
+
+                    <nav>
+                        <ul id="github-saved-repos-pagination" class="pagination justify-content-center mt-3"></ul>
+                    </nav>
+
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    {#  Export section  #}
+    <section class="export">
+        <header class="export__header">
+            <h2 class="header__text">Export challenges to JSON files</h2>
+        </header>
+
+        <section class="export__body">
+            <div>
+                <h5 class="subsection-title">
+                    <i class="fas fa-database me-1"></i> Challenges
+                </h5>
+
+                <p>You can export challenges individually or select several challenges from the table and download a zip file containing a JSON file for each challenge. For challenges that have not been imported from the Github App, a UUID will be generated in the necessary fields.</p>
+
+                <div class="multiple-export">
+                    <button id="select-all-challenges" class="btn btn-primary">
+                        <i class="fas fa-check me-1"></i> Select All
+                    </button>
+                    <button id="deselect-all-challenges" class="btn btn-secondary">
+                        <i class="fas fa-times me-1"></i> Deselect All
+                    </button>
+                    <button id="export-selected-challenges" class="btn btn-success">
+                        <i class="fas fa-upload me-1"></i> Export selected challenges
+                    </button>
+                </div>
+                <table class="table table-bordered" id="challenge-table">
+                    <thead>
+                        <tr>
+                            <th><i class="fas fa-check-square me-1"></i></th>
+                            <th><i class="fas fa-folder-open me-1"></i> Name</th>
+                            <th><i class="fab fa-github me-1"></i> Imported from Github</th>
+                            <th><i class="fas fa-cogs me-1"></i> Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <nav>
+                    <ul id="challenge-pagination" class="pagination"></ul>
+                </nav>
+            </div>
+        </section>
+    </section>
+
+
+
+</div>
+{% endblock %}
+
+
+{% block scripts %}
+    {{ super() }}
+    <script src="{{ url_for('github_backup.static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('github_backup.static', filename='js/export_section.js') }}"></script>
+    <script src="{{ url_for('github_backup.static', filename='js/import_section.js') }}"></script>
+    <script src="{{ url_for('github_backup.static', filename='js/auth_section.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('github_backup.static', filename='css/style.css') }}">
+{% endblock %}
+
