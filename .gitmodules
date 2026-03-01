@@ -83,3 +83,6 @@
 [submodule "ctfd-bitcoin-rewards-challenge"]
 	path = ctfd-bitcoin-rewards-challenge
 	url = git@github.com:aljazceru/ctfd-bitcoin-rewards-challenge.git
+[submodule "CTFd-SSO-plugin"]
+	path = CTFd-SSO-plugin
+	url = https://github.com/riccardotornesello/CTFd-SSO-plugin.git
