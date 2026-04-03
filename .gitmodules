@@ -83,3 +83,6 @@
 [submodule "ctfd-bitcoin-rewards-challenge"]
 	path = ctfd-bitcoin-rewards-challenge
 	url = git@github.com:aljazceru/ctfd-bitcoin-rewards-challenge.git
+[submodule "CTFd-Tickets"]
+	path = CTFd-Tickets
+	url = https://github.com/Leclowndu93150/CTFd-Tickets.git
