@@ -89,3 +89,6 @@
 [submodule "CTFd-Tickets"]
 	path = CTFd-Tickets
 	url = https://github.com/Leclowndu93150/CTFd-Tickets.git
+[submodule "ctfd-plugin-webhooks"]
+	path = ctfd-plugin-webhooks
+	url = https://github.com/u-ctf/ctfd-plugin-webhooks
