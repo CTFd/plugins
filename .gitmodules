@@ -95,3 +95,15 @@
 [submodule "CTFd-solve-fx"]
 	path = CTFd-Solve-FX
 	url = https://github.com/2alf/CTFd-solve-FX
+[submodule "geo_challenges"]
+	path = geo_challenges
+	url = https://github.com/degun-osint/geo_challenges
+[submodule "CTFd-challatrou"]
+	path = CTFd-challatrou
+	url = https://github.com/degun-osint/CTFd-challatrou
+[submodule "CTFd-Beta-Tester"]
+	path = CTFd-Beta-Tester
+	url = https://github.com/degun-osint/CTFd-Beta-Tester
+[submodule "CTFd-bulk-challenge-manager"]
+	path = CTFd-bulk-challenge-manager
+	url = https://github.com/degun-osint/CTFd-bulk-challenge-manager
