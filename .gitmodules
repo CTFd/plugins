@@ -95,3 +95,18 @@
 [submodule "CTFd-solve-fx"]
 	path = CTFd-Solve-FX
 	url = https://github.com/2alf/CTFd-solve-FX
+[submodule "ctfd-user-control-plugin"]
+	path = ctfd-user-control-plugin
+	url = https://github.com/defojeco/ctfd-user-control-plugin.git
+[submodule "ctfd-plugin-multichoice"]
+	path = ctfd-plugin-multichoice
+	url = https://github.com/defojeco/ctfd-plugin-multichoice.git
+[submodule "ctfd-dynamic-values"]
+	path = ctfd-dynamic-values
+	url = https://github.com/defojeco/ctfd-dynamic-values.git
+[submodule "ctfd-dynamic-flag"]
+	path = ctfd-dynamic-flag
+	url = https://github.com/defojeco/ctfd-dynamic-flag.git
+[submodule "ctfd-ldap-plugin"]
+	path = ctfd-ldap-plugin
+	url = https://github.com/defojeco/ctfd-ldap-plugin.git
