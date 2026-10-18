@@ -95,3 +95,6 @@
 [submodule "CTFd-solve-fx"]
 	path = CTFd-Solve-FX
 	url = https://github.com/2alf/CTFd-solve-FX
+[submodule "ctfd-writeup-upload"]
+	path = ctfd-writeup-upload
+	url = https://github.com/deploy103/ctfd-writeup-upload.git
